@@ -1,0 +1,37 @@
+POST localhost:8080/user/register
+Content-Type: application/json
+
+{
+  "firstName": "Massimo",
+  "lastName": "Nardone",
+  "email": "mmassimo@gmail.com",
+  "password": "masspasswd",
+  "userRole": "user"
+}
+
+
+###
+POST localhost:8080/user/authenticate
+Content-Type: application/json
+
+{
+  "email": "mmassimo@gmail.com",
+  "password": "masspasswd123"
+}
+
+###
+POST localhost:8080/user/register
+Content-Type: application/json
+
+{
+  "firstName": "Neve",
+  "lastName": "Nardon",
+  "email": "neve@gmail.com",
+  "password": "nevepasswd",
+  "userRole": "admin"
+}
+
+###
+GET localhost:8080/admin/hello
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtbWFzc2ltb0BnbWFpbC5jb20iLCJyb2xlIjpbIlVTRVIiXSwiaWF0IjoxNzQ0MDMzMjY0LCJleHAiOjE3NDQwNjkyNjR9.i1gjwzJL1f0tprqrPQ9_1PqUah8jM4x9xWbIx2-PDsI
+

@@ -1,0 +1,21 @@
+GET http://localhost:8080/products/
+X-TENANT-ID: admin
+Authorization: Basic quynhnhi@gmail.com 12345
+
+###
+GET http://localhost:8080/users/
+X-TENANT-ID: admin
+Authorization: Basic thanhhuyen@gmail.com 12345
+
+
+###
+POST localhost:8080/products/
+X-TENANT-ID: admin
+Authorization: Basic quynhnhi@gmail.com 12345
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "ASUS",
+  "price": 12345
+}

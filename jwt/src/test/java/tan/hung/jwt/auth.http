@@ -1,0 +1,11 @@
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "quynhnhi@gmail.com",
+  "password": "12345"
+}
+
+###
+GET http://localhost:8080/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyLHF1eW5obmhpQGdtYWlsLmNvbSx1c2VyIiwiaWF0IjoxNzQzOTY3MTE2LCJleHAiOjE3NDM5NjcyOTZ9.cSn3AwD5CvP9596qIAasfFh86oRtvTOttxIOmhMRYeg

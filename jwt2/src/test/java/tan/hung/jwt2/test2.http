@@ -1,0 +1,22 @@
+POST localhost:8080/user/register
+Content-Type: application/json
+
+{
+  "firstName": "nguyen123",
+  "lastName": "hung123",
+  "email": "tanhung123@gmail.com",
+  "password": "12345",
+  "userRole": "user"
+}
+###
+POST localhost:8080/user/authenticate
+Content-Type: application/json
+
+{
+  "email": "tanhung123@gmail.com",
+  "password": "123456"
+}
+
+###
+GET localhost:8080/admin/hello
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXZlQGdtYWlsLmNvbSIsInJvbGUiOlsiQURNSU4iXSwiaWF0IjoxNzQ0MDM4ODIzLCJleHAiOjE3NDQwNzQ4MjN9.rVVAQN0lmHyFa5ZJpQqGL--HeF_UZESuCS9eXAd18t8
